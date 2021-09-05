@@ -4,6 +4,7 @@ package usecase;
 import entities.User;
 import usecase.port.IdGenerator;
 import usecase.port.UserRepository;
+import usecase.validator.RegisterUserValidator;
 
 /**
  * @author diasa
@@ -21,6 +22,7 @@ public class RegisterUser {
     }
 
     public void register(String email, String fullName) {
+        RegisterUserValidator.validateRegisterUser(email, fullName);
         User user = new User();
         user.setId(idGenerator.generate());
         user.setEmail(email);

@@ -18,7 +18,6 @@ import javax.validation.Valid;
  * @version 1.0, Aug 16, 2021
  * @since
  */
-@Validated
 @Controller
 public class AnonymousRestController {
     private final AnonymousController anonymousController;
@@ -35,7 +34,7 @@ public class AnonymousRestController {
 
     @Post(value = "register", consumes = MediaType.APPLICATION_JSON)
     public HttpResponse<Void> register(
-            @Body @Valid RegisterRequestModel registerRequestModel) {
+            @Body RegisterRequestModel registerRequestModel) {
         anonymousController.register(registerRequestModel);
         return HttpResponse.ok();
     }
