@@ -1,11 +1,5 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package usecase.exception;
 
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 public class NotAllowedException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;

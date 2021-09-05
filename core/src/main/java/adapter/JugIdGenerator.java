@@ -1,4 +1,3 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package adapter;
 
 import com.fasterxml.uuid.EthernetAddress;
@@ -6,11 +5,6 @@ import com.fasterxml.uuid.Generators;
 import com.fasterxml.uuid.NoArgGenerator;
 import usecase.port.IdGenerator;
 
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 public class JugIdGenerator implements IdGenerator {
 
     @Override

@@ -1,4 +1,3 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package id.diasna.refactor.micronaut.web;
 
 import io.micronaut.http.HttpRequest;
@@ -9,11 +8,6 @@ import usecase.exception.NotAllowedException;
 
 import javax.inject.Singleton;
 
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 @Produces
 @Singleton
 public class UserExceptionHandler

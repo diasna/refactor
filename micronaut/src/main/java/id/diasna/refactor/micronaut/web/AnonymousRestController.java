@@ -1,4 +1,3 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package id.diasna.refactor.micronaut.web;
 
 import adapter.controller.AnonymousController;
@@ -9,15 +8,7 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Post;
-import io.micronaut.validation.Validated;
 
-import javax.validation.Valid;
-
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 @Controller
 public class AnonymousRestController {
     private final AnonymousController anonymousController;

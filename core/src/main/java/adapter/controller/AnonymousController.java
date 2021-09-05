@@ -1,4 +1,3 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package adapter.controller;
 
 import adapter.controller.model.LoginRequestModel;
@@ -6,11 +5,6 @@ import adapter.controller.model.RegisterRequestModel;
 import usecase.LoginUser;
 import usecase.RegisterUser;
 
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 public class AnonymousController {
     private final LoginUser loginUser;
     private final RegisterUser registerUser;

@@ -1,4 +1,3 @@
-/* Copyright (C) 2021 ASYX International B.V. All rights reserved. */
 package usecase;
 
 import entities.User;
@@ -6,11 +5,6 @@ import usecase.port.IdGenerator;
 import usecase.port.UserRepository;
 import usecase.validator.RegisterUserValidator;
 
-/**
- * @author diasa
- * @version 1.0, Aug 16, 2021
- * @since
- */
 public class RegisterUser {
     private final UserRepository userRepository;
     private final IdGenerator idGenerator;
