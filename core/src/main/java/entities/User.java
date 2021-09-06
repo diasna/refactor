@@ -4,6 +4,7 @@ public class User {
     private String id;
     private String email;
     private String fullName;
+    private String password;
 
     public String getId() {
         return id;
@@ -29,4 +30,20 @@ public class User {
         this.fullName = fullName;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", email='" + email + '\'' +
+                ", fullName='" + fullName + '\'' +
+                '}';
+    }
 }

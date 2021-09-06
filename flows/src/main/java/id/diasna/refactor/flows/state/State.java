@@ -1,7 +1,7 @@
-package flows.state;
+package id.diasna.refactor.flows.state;
 
-import flows.Input;
-import flows.Status;
+import id.diasna.refactor.flows.Input;
+import id.diasna.refactor.flows.Status;
 
 import java.util.HashMap;
 import java.util.Map;

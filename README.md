@@ -1,0 +1,2 @@
+### Notes
+> In the context of JPA, an Entity is a persistence abstraction representing rows in a table and ORM. In the context of Clean Architecture, an Entity is a business domain abstraction and is completely independent of persistence

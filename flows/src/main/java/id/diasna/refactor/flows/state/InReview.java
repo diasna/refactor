@@ -1,8 +1,8 @@
-package flows.state;
+package id.diasna.refactor.flows.state;
 
-import flows.Action;
-import flows.Status;
-import flows.Document;
+import id.diasna.refactor.flows.Action;
+import id.diasna.refactor.flows.Status;
+import id.diasna.refactor.flows.Document;
 
 public class InReview extends State {
     @Override

@@ -1,8 +1,8 @@
-package flows.state;
+package id.diasna.refactor.flows.state;
 
-import flows.Document;
-import flows.Action;
-import flows.Status;
+import id.diasna.refactor.flows.Document;
+import id.diasna.refactor.flows.Action;
+import id.diasna.refactor.flows.Status;
 
 public class Draft extends State {
     @Override

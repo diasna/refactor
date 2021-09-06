@@ -1,6 +1,6 @@
-package flows.state;
+package id.diasna.refactor.flows.state;
 
-import flows.Document;
+import id.diasna.refactor.flows.Document;
 
 public class Rejected extends State {
     @Override

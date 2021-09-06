@@ -1,4 +1,4 @@
-package flows;
+package id.diasna.refactor.flows;
 
 public class Action {
     public static final int REVIEW = 0;

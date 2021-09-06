@@ -1,15 +1,19 @@
-package adapter.controller.model;
+package adapter.controller.anonymous.model;
 
-public class LoginRequestModel {
+public class RegisterRequestModel {
     private String email;
+    private String fullName;
     private String password;
 
     public String getEmail() {
         return email;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
     public String getPassword() {
         return password;
     }
-
 }

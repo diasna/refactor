@@ -1,7 +1,7 @@
-package flows;
+package id.diasna.refactor.flows;
 
-import flows.state.Draft;
-import flows.state.State;
+import id.diasna.refactor.flows.state.Draft;
+import id.diasna.refactor.flows.state.State;
 
 public class Document {
 

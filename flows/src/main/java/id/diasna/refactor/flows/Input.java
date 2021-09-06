@@ -1,4 +1,4 @@
-package flows;
+package id.diasna.refactor.flows;
 
 public class Input {
     private String content;
