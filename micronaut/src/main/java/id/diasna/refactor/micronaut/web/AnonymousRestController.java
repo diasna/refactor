@@ -1,8 +1,7 @@
 package id.diasna.refactor.micronaut.web;
 
-import adapter.controller.anonymous.AnonymousController;
-import adapter.controller.anonymous.model.LoginRequestModel;
-import adapter.controller.anonymous.model.RegisterRequestModel;
+import id.diasna.refactor.adapter.controller.anonymous.AnonymousController;
+import id.diasna.refactor.adapter.controller.anonymous.model.RegisterRequestModel;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
@@ -15,12 +14,6 @@ public class AnonymousRestController {
 
     public AnonymousRestController(AnonymousController anonymousController) {
         this.anonymousController = anonymousController;
-    }
-
-    @Post(value = "login", consumes = MediaType.APPLICATION_JSON)
-    public HttpResponse<Void> login(@Body LoginRequestModel loginRequestModel) {
-        anonymousController.login(loginRequestModel);
-        return HttpResponse.ok();
     }
 
     @Post(value = "register", consumes = MediaType.APPLICATION_JSON)

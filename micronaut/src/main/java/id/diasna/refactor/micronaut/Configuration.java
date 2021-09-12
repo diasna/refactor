@@ -1,17 +1,14 @@
 package id.diasna.refactor.micronaut;
 
-import adapter.JugIdGenerator;
-import adapter.Sha256PasswordEncoder;
-import adapter.controller.anonymous.AnonymousController;
-import adapter.repository.InMemoryTokenRepository;
-import adapter.repository.InMemoryUserRepository;
+import id.diasna.refactor.adapter.JugIdGenerator;
+import id.diasna.refactor.adapter.Sha256PasswordEncoder;
+import id.diasna.refactor.adapter.controller.anonymous.AnonymousController;
+import id.diasna.refactor.adapter.repository.InMemoryUserRepository;
 import io.micronaut.context.annotation.Factory;
-import usecase.RegisterUser;
-import usecase.authentication.AuthenticationRequest;
-import usecase.port.IdGenerator;
-import usecase.port.PasswordEncoder;
-import usecase.port.TokenRepository;
-import usecase.port.UserRepository;
+import id.diasna.refactor.usecase.RegisterUser;
+import id.diasna.refactor.usecase.port.IdGenerator;
+import id.diasna.refactor.usecase.port.PasswordEncoder;
+import id.diasna.refactor.usecase.port.UserRepository;
 
 import javax.inject.Singleton;
 
@@ -19,7 +16,6 @@ import javax.inject.Singleton;
 public class Configuration {
     private final JugIdGenerator jugIdGenerator = new JugIdGenerator();
     private final InMemoryUserRepository inMemoryUserRepository = new InMemoryUserRepository();
-    private final InMemoryTokenRepository inMemoryTokenRepository = new InMemoryTokenRepository();
 
     @Singleton
     public IdGenerator idGenerator() {
@@ -37,17 +33,10 @@ public class Configuration {
     }
 
     @Singleton
-    public TokenRepository tokenRepository() {
-        return inMemoryTokenRepository;
-    }
-
-    @Singleton
     public AnonymousController anonymousController(final UserRepository userRepository,
-                                                   final TokenRepository tokenRepository,
                                                    final IdGenerator idGenerator,
                                                    final PasswordEncoder passwordEncoder) {
         return new AnonymousController(
-                new AuthenticationRequest(userRepository, tokenRepository, passwordEncoder),
                 new RegisterUser(userRepository, idGenerator, passwordEncoder())
         );
     }

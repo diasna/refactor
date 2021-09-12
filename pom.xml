@@ -11,6 +11,7 @@
         <module>quarkus</module>
         <module>micronaut</module>
         <module>flows</module>
+        <module>adapter</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

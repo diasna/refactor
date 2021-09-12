@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>id.diasna.refactor</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>adapter</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
@@ -90,6 +90,7 @@
             <plugin>
                 <groupId>io.micronaut.build</groupId>
                 <artifactId>micronaut-maven-plugin</artifactId>
+                <version>3.0.2</version>
                 <configuration>
                     <mainClass>id.diasna.refactor.micronaut.Application</mainClass>
                 </configuration>
