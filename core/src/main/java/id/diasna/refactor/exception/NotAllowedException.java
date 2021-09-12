@@ -1,4 +1,4 @@
-package id.diasna.refactor.usecase.exception;
+package id.diasna.refactor.exception;
 
 public class NotAllowedException extends RuntimeException {
 

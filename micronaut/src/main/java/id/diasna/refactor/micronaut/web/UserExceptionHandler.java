@@ -4,7 +4,7 @@ import io.micronaut.http.HttpRequest;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Produces;
 import io.micronaut.http.server.exceptions.ExceptionHandler;
-import id.diasna.refactor.usecase.exception.NotAllowedException;
+import id.diasna.refactor.exception.NotAllowedException;
 
 import javax.inject.Singleton;
 

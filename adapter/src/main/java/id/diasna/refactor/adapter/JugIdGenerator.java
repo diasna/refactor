@@ -3,7 +3,7 @@ package id.diasna.refactor.adapter;
 import com.fasterxml.uuid.EthernetAddress;
 import com.fasterxml.uuid.Generators;
 import com.fasterxml.uuid.NoArgGenerator;
-import id.diasna.refactor.usecase.port.IdGenerator;
+import id.diasna.refactor.port.IdGenerator;
 
 public class JugIdGenerator implements IdGenerator {
 

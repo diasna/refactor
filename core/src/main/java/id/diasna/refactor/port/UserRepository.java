@@ -1,4 +1,4 @@
-package id.diasna.refactor.usecase.port;
+package id.diasna.refactor.port;
 
 import java.util.Optional;
 

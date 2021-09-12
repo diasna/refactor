@@ -1,11 +1,11 @@
 package id.diasna.refactor.usecase;
 
 import id.diasna.refactor.entities.User;
-import id.diasna.refactor.usecase.port.PasswordEncoder;
-import id.diasna.refactor.usecase.exception.UserValidationException;
-import id.diasna.refactor.usecase.port.IdGenerator;
-import id.diasna.refactor.usecase.port.UserRepository;
-import id.diasna.refactor.usecase.validator.RegisterUserValidator;
+import id.diasna.refactor.port.PasswordEncoder;
+import id.diasna.refactor.exception.UserValidationException;
+import id.diasna.refactor.port.IdGenerator;
+import id.diasna.refactor.port.UserRepository;
+import id.diasna.refactor.validator.RegisterUserValidator;
 
 public class RegisterUser {
     private final UserRepository userRepository;

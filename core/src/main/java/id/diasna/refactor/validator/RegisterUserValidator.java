@@ -1,7 +1,7 @@
-package id.diasna.refactor.usecase.validator;
+package id.diasna.refactor.validator;
 
 import org.apache.commons.lang.StringUtils;
-import id.diasna.refactor.usecase.exception.UserValidationException;
+import id.diasna.refactor.exception.UserValidationException;
 
 public class RegisterUserValidator {
     public static void validateRegisterUser(String email, String fullName) {

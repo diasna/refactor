@@ -1,8 +1,8 @@
 package id.diasna.refactor.usecase.document;
 
 import id.diasna.refactor.entities.Document;
-import id.diasna.refactor.usecase.port.DocumentRepository;
-import id.diasna.refactor.usecase.port.IdGenerator;
+import id.diasna.refactor.port.DocumentRepository;
+import id.diasna.refactor.port.IdGenerator;
 
 public class CreateDocument {
     private final DocumentRepository documentRepository;

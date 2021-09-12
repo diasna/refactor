@@ -1,7 +1,7 @@
 package id.diasna.refactor.adapter;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import id.diasna.refactor.usecase.port.PasswordEncoder;
+import id.diasna.refactor.port.PasswordEncoder;
 
 public class Sha256PasswordEncoder implements PasswordEncoder {
     @Override

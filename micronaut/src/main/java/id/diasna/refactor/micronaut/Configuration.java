@@ -3,19 +3,30 @@ package id.diasna.refactor.micronaut;
 import id.diasna.refactor.adapter.JugIdGenerator;
 import id.diasna.refactor.adapter.Sha256PasswordEncoder;
 import id.diasna.refactor.adapter.controller.anonymous.AnonymousController;
-import id.diasna.refactor.adapter.repository.InMemoryUserRepository;
-import io.micronaut.context.annotation.Factory;
+import id.diasna.refactor.adapter.repository.DocumentJpaRepository;
+import id.diasna.refactor.adapter.repository.entities.mapper.DocumentEntityMapper;
+import id.diasna.refactor.port.DocumentRepository;
+import id.diasna.refactor.port.IdGenerator;
+import id.diasna.refactor.port.PasswordEncoder;
+import id.diasna.refactor.port.UserRepository;
 import id.diasna.refactor.usecase.RegisterUser;
-import id.diasna.refactor.usecase.port.IdGenerator;
-import id.diasna.refactor.usecase.port.PasswordEncoder;
-import id.diasna.refactor.usecase.port.UserRepository;
+import io.micronaut.context.annotation.Factory;
 
 import javax.inject.Singleton;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 @Factory
 public class Configuration {
     private final JugIdGenerator jugIdGenerator = new JugIdGenerator();
-    private final InMemoryUserRepository inMemoryUserRepository = new InMemoryUserRepository();
+
+    @PersistenceContext
+    private EntityManager entityManager;
+
+    @Singleton
+    public DocumentRepository documentRepository() {
+        return new DocumentJpaRepository(entityManager, new DocumentEntityMapper());
+    }
 
     @Singleton
     public IdGenerator idGenerator() {
@@ -27,10 +38,6 @@ public class Configuration {
         return new Sha256PasswordEncoder();
     }
 
-    @Singleton
-    public UserRepository userRepository() {
-        return inMemoryUserRepository;
-    }
 
     @Singleton
     public AnonymousController anonymousController(final UserRepository userRepository,
