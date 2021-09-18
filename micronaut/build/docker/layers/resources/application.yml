@@ -1,9 +1,0 @@
-micronaut:
-  application:
-    name: refactor
-datasources:
-  default:
-    url: jdbc:h2:~/refactor.db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    username: sa
-    password: sa
-    driverClassName: org.h2.Driver
