@@ -1,0 +1,11 @@
+plugins {
+    id 'myproject.java-conventions'
+}
+
+dependencies {
+    compileOnly('javax.validation:validation-api:2.0.1.Final')
+    compileOnly('org.slf4j:slf4j-api:1.7.32')
+
+    implementation('commons-codec:commons-codec:1.6')
+    implementation('commons-lang:commons-lang:2.4')
+}

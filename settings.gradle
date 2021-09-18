@@ -1,0 +1,3 @@
+rootProject.name = 'refactor'
+
+include 'core', 'adapter', 'micronaut', 'flows'

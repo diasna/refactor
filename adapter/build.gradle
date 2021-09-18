@@ -1,0 +1,12 @@
+plugins {
+    id 'myproject.java-conventions'
+}
+
+dependencies {
+    implementation project(':core')
+    implementation('commons-codec:commons-codec:1.6')
+    implementation('commons-lang:commons-lang:2.4')
+
+    compileOnly('com.fasterxml.uuid:java-uuid-generator:4.0.1')
+    compileOnly('javax.persistence:javax.persistence-api:2.2')
+}
