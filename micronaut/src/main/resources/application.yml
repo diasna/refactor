@@ -7,12 +7,9 @@ datasources:
     username: sa
     password: sa
     driverClassName: org.h2.Driver
+
 jpa:
   default:
-    packages-to-scan:
-      - 'id.diasna.refactor.adapter.repository'
-    properties:
-      hibernate:
-        hbm2ddl:
-          auto: update
-        show_sql: true
+    entity-scan:
+      packages:
+        - id.diasna.refactor.adapter.*

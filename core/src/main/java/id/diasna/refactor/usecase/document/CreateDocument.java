@@ -1,6 +1,6 @@
 package id.diasna.refactor.usecase.document;
 
-import id.diasna.refactor.entities.Document;
+import id.diasna.refactor.domain.Document;
 import id.diasna.refactor.port.DocumentRepository;
 import id.diasna.refactor.port.IdGenerator;
 

@@ -5,7 +5,7 @@ import id.diasna.refactor.adapter.Sha256PasswordEncoder;
 import id.diasna.refactor.adapter.controller.anonymous.AnonymousController;
 import id.diasna.refactor.adapter.controller.document.DocumentController;
 import id.diasna.refactor.adapter.repository.DocumentJpaRepository;
-import id.diasna.refactor.adapter.repository.entities.mapper.DocumentEntityMapper;
+import id.diasna.refactor.adapter.repository.entities.DocumentEntityMapper;
 import id.diasna.refactor.port.DocumentRepository;
 import id.diasna.refactor.port.IdGenerator;
 import id.diasna.refactor.port.PasswordEncoder;
@@ -13,8 +13,8 @@ import id.diasna.refactor.port.UserRepository;
 import id.diasna.refactor.usecase.RegisterUser;
 import id.diasna.refactor.usecase.document.CreateDocument;
 import io.micronaut.context.annotation.Factory;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 

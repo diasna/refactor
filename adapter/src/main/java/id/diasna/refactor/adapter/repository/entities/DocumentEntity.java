@@ -1,5 +1,6 @@
 package id.diasna.refactor.adapter.repository.entities;
 
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 

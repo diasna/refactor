@@ -1,6 +1,6 @@
 package id.diasna.refactor.usecase;
 
-import id.diasna.refactor.entities.User;
+import id.diasna.refactor.domain.User;
 import id.diasna.refactor.port.PasswordEncoder;
 import id.diasna.refactor.exception.UserValidationException;
 import id.diasna.refactor.port.IdGenerator;

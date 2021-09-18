@@ -1,4 +1,4 @@
-package id.diasna.refactor.entities;
+package id.diasna.refactor.domain;
 
 public class Document {
     private String id;

@@ -1,4 +1,4 @@
-package id.diasna.refactor.entities;
+package id.diasna.refactor.domain;
 
 public class User {
     private String id;

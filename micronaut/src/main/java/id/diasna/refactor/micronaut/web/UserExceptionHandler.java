@@ -5,10 +5,8 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Produces;
 import io.micronaut.http.server.exceptions.ExceptionHandler;
 import id.diasna.refactor.exception.NotAllowedException;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
-
-import static org.slf4j.LoggerFactory.getLogger;
 
 @Produces
 @Singleton

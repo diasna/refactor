@@ -1,7 +1,7 @@
 package id.diasna.refactor.adapter.repository;
 
-import id.diasna.refactor.adapter.repository.entities.mapper.DocumentEntityMapper;
-import id.diasna.refactor.entities.Document;
+import id.diasna.refactor.adapter.repository.entities.DocumentEntityMapper;
+import id.diasna.refactor.domain.Document;
 import id.diasna.refactor.port.DocumentRepository;
 
 import javax.persistence.EntityManager;
