@@ -10,6 +10,12 @@ datasources:
 
 jpa:
   default:
-    entity-scan:
-      packages:
-        - id.diasna.refactor.adapter.*
+    packages-to-scan:
+      - id.diasna.refactor.adapter.repository
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        show_sql: true
+        bytecode:
+          provider: none
