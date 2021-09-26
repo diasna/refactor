@@ -10,12 +10,10 @@ datasources:
 
 jpa:
   default:
-    packages-to-scan:
-      - id.diasna.refactor.adapter.repository
     properties:
       hibernate:
         hbm2ddl:
-          auto: validate
+          auto: create-drop
         show_sql: true
         bytecode:
           provider: none

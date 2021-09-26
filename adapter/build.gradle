@@ -9,4 +9,7 @@ dependencies {
 
     compileOnly('com.fasterxml.uuid:java-uuid-generator:4.0.1')
     compileOnly('javax.persistence:javax.persistence-api:2.2')
+
+    compileOnly('io.micronaut:micronaut-inject:3.0.1')
+    annotationProcessor('io.micronaut:micronaut-inject-java:3.0.1')
 }

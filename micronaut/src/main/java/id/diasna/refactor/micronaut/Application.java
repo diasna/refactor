@@ -3,7 +3,9 @@ package id.diasna.refactor.micronaut;
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.runtime.Micronaut;
 
-@Introspected(packages = "id.diasna.refactor.adapter.repository", includedAnnotations = javax.persistence.Entity.class)
+import javax.persistence.Entity;
+
+@Introspected(packages = "id.diasna.refactor.adapter.repository", includedAnnotations = Entity.class)
 public class Application {
 
     public static void main(String[] args) {
